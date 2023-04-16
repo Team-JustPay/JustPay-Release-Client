@@ -1,23 +1,25 @@
 {
-  "name": "d",
+  "name": "a",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@tanstack/react-query": "^4.28.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.19",
-    "@types/react": "^18.0.28",
+    "@types/node": "^16.18.23",
+    "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
+    "@types/react-router-dom": "^5.3.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.9.0",
+    "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.9",
-    "styled-reset": "^4.4.5",
-    "web-vitals": "^2.1.4"
+    "styled-reset": "^4.4.6",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4",
+    "yarn": "^1.22.19"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -43,15 +45,16 @@
       "last 1 safari version"
     ]
   },
+  "packageManager": "yarn@3.5.0",
   "devDependencies": {
+    "@types/prettier": "^2",
     "@types/styled-components": "^5.1.26",
-    "@typescript-eslint/eslint-plugin": "^5.56.0",
-    "@typescript-eslint/parser": "^5.56.0",
-    "eslint": "^8.36.0",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
     "eslint-config-prettier": "^8.8.0",
+    "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
-    "prettier": "^2.8.6",
-    "typescript": "^5.0.2"
+    "prettier": "^2.8.7"
   }
 }

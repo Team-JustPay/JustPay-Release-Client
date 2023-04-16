@@ -1,13 +1,7 @@
 import React from "react";
-import GlobalStyle from "styles/globalStyle";
 
-const App = () => {
-  return (
-    <>
-      <GlobalStyle />
-      <p>JustPay</p>
-    </>
-  );
-};
+function App() {
+  return <h1>저스트페이</h1>;
+}
 
 export default App;
