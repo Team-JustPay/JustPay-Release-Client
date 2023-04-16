@@ -1,7 +1,12 @@
-import React from "react";
+import React from 'react';
+import styled from 'styled-components';
+
+const MainTitle = styled.h1`
+  color: blue;
+`;
 
 function App() {
-  return <h1>저스트페이</h1>;
+  return <MainTitle>저스트페이</MainTitle>;
 }
 
 export default App;
