@@ -19,5 +19,5 @@
     "incremental": true
   },
   "exclude": ["node_modules", "build", "public"],
-  "include": ["src"]
+  "include": ["src", "src/asset.d.ts", ".eslintrc.json"]
 }
