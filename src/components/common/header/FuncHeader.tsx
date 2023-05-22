@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Header, HeaderSection } from './headerStyle';
+import { Header, HeaderSection } from './HeaderStyle';
 
 import { ReactComponent as LeftArrow } from '../../../assets/logo/left_arrow.svg';
 import { ReactComponent as CloseButton } from '../../../assets/logo/x_logo.svg';
