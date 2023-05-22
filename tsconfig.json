@@ -16,8 +16,9 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "typeRoots": ["./@types", "./src"]
   },
   "exclude": ["node_modules", "build", "public"],
-  "include": ["src", "src/asset.d.ts", ".eslintrc.json"]
+  "include": ["src", "src/asset.d.ts", ".eslintrc.json", "src/assets/logo.d.ts"]
 }
