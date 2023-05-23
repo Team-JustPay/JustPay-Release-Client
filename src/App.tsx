@@ -1,14 +1,16 @@
 import React from 'react';
-import styled from 'styled-components';
-
+import GlobalStyle from './styles/globalStyle';
+import theme from './styles/theme';
+import { ThemeProvider } from 'styled-components';
 import Routes from 'pages/routes';
 
-const MainTitle = styled.h1`
-  color: blue;
-`;
-
 function App() {
-  return <Routes />;
+  return (
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Routes />
+    </ThemeProvider>
+  );
 }
 
 export default App;
