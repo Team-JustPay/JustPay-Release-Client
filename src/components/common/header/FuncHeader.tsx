@@ -28,14 +28,11 @@ export default function FuncHeader({ title, leftFunc, rightFunc }: FuncHeaderPro
 }
 
 const Title = styled.h1`
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 20px;
+  color: ${({ theme }) => theme.colors.black_green};
+  font: ${({ theme }) => theme.fonts.SB_17};
 `;
 
 const ModifyText = styled.p`
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 20px;
-  color: #afb8b7;
+  color: ${({ theme }) => theme.colors.bright_green};
+  font: ${({ theme }) => theme.fonts.SB_17};
 `;
