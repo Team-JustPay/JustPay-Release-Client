@@ -5,7 +5,7 @@ import FuncHeader from './header/FuncHeader';
 import MainHeader from './header/MainHeader';
 
 interface LayoutProps {
-  children?: ReactElement[];
+  children?: ReactElement | ReactElement[];
 }
 
 export default function Layout({ children }: LayoutProps) {
