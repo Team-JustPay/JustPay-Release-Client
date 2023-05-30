@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Header = styled.section`
-  padding: 0 1rem;
+  padding: 0 1.6rem;
   height: 50px;
   display: flex;
   justify-content: space-between;
