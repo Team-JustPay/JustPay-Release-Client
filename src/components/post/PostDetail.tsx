@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Profile from 'components/common/Profile';
-import FullButton from 'components/common/FullButton';
+import FullWidthButton from 'components/common/FullWidthButton';
 import PostInfo from './PostInfo';
 
 export default function PostDetail() {
@@ -12,7 +12,7 @@ export default function PostDetail() {
       <PostText>wtb pc nctdream photocard 포카 양도</PostText>
       <PostImage alt="게시글 이미지" />
       <PostInfo />
-      <FullButton text="이 게시글 링크 복사하기" />
+      <FullWidthButton color="green" text="이 게시글 링크 복사하기" />
     </PostContainer>
   );
 }

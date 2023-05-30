@@ -18,8 +18,8 @@ export default function Profile({ isVertical }: ProfileProps) {
 }
 
 const Container = styled.section<{ isVertical: boolean }>`
-  ${(props) =>
-    props.isVertical &&
+  ${({ isVertical }) =>
+    isVertical &&
     css`
       display: flex;
       gap: 0.8rem;
