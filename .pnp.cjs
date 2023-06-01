@@ -51,6 +51,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react-app", "virtual:98449bcd1a995107381bb2a9bb025eddcbfc97f53a77200ba549e5724810901dfb40398b7d55932ef7f965e46a338566339ecc4f531b87f778707c73bfad3365#npm:6.2.2"],\
             ["prettier", "npm:2.8.8"],\
             ["react", "npm:18.2.0"],\
+            ["react-content-loader", "virtual:98449bcd1a995107381bb2a9bb025eddcbfc97f53a77200ba549e5724810901dfb40398b7d55932ef7f965e46a338566339ecc4f531b87f778707c73bfad3365#npm:6.2.1"],\
             ["react-dom", "virtual:98449bcd1a995107381bb2a9bb025eddcbfc97f53a77200ba549e5724810901dfb40398b7d55932ef7f965e46a338566339ecc4f531b87f778707c73bfad3365#npm:18.2.0"],\
             ["react-router-dom", "virtual:98449bcd1a995107381bb2a9bb025eddcbfc97f53a77200ba549e5724810901dfb40398b7d55932ef7f965e46a338566339ecc4f531b87f778707c73bfad3365#npm:6.11.1"],\
             ["react-scripts", "virtual:98449bcd1a995107381bb2a9bb025eddcbfc97f53a77200ba549e5724810901dfb40398b7d55932ef7f965e46a338566339ecc4f531b87f778707c73bfad3365#npm:5.0.1"],\
@@ -5713,6 +5714,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react-app", "virtual:98449bcd1a995107381bb2a9bb025eddcbfc97f53a77200ba549e5724810901dfb40398b7d55932ef7f965e46a338566339ecc4f531b87f778707c73bfad3365#npm:6.2.2"],\
             ["prettier", "npm:2.8.8"],\
             ["react", "npm:18.2.0"],\
+            ["react-content-loader", "virtual:98449bcd1a995107381bb2a9bb025eddcbfc97f53a77200ba549e5724810901dfb40398b7d55932ef7f965e46a338566339ecc4f531b87f778707c73bfad3365#npm:6.2.1"],\
             ["react-dom", "virtual:98449bcd1a995107381bb2a9bb025eddcbfc97f53a77200ba549e5724810901dfb40398b7d55932ef7f965e46a338566339ecc4f531b87f778707c73bfad3365#npm:18.2.0"],\
             ["react-router-dom", "virtual:98449bcd1a995107381bb2a9bb025eddcbfc97f53a77200ba549e5724810901dfb40398b7d55932ef7f965e46a338566339ecc4f531b87f778707c73bfad3365#npm:6.11.1"],\
             ["react-scripts", "virtual:98449bcd1a995107381bb2a9bb025eddcbfc97f53a77200ba549e5724810901dfb40398b7d55932ef7f965e46a338566339ecc4f531b87f778707c73bfad3365#npm:5.0.1"],\
@@ -15773,6 +15775,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["raf", "npm:3.4.1"],\
             ["regenerator-runtime", "npm:0.13.11"],\
             ["whatwg-fetch", "npm:3.6.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react-content-loader", [\
+        ["npm:6.2.1", {\
+          "packageLocation": "./.yarn/cache/react-content-loader-npm-6.2.1-1d54ed51d4-f777d40825.zip/node_modules/react-content-loader/",\
+          "packageDependencies": [\
+            ["react-content-loader", "npm:6.2.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:98449bcd1a995107381bb2a9bb025eddcbfc97f53a77200ba549e5724810901dfb40398b7d55932ef7f965e46a338566339ecc4f531b87f778707c73bfad3365#npm:6.2.1", {\
+          "packageLocation": "./.yarn/__virtual__/react-content-loader-virtual-a18e4e65f5/0/cache/react-content-loader-npm-6.2.1-1d54ed51d4-f777d40825.zip/node_modules/react-content-loader/",\
+          "packageDependencies": [\
+            ["react-content-loader", "virtual:98449bcd1a995107381bb2a9bb025eddcbfc97f53a77200ba549e5724810901dfb40398b7d55932ef7f965e46a338566339ecc4f531b87f778707c73bfad3365#npm:6.2.1"],\
+            ["@types/react", "npm:18.2.6"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
