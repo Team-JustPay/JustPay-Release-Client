@@ -7,7 +7,7 @@ import MainHeader from './header/MainHeader';
 import { useLocation } from 'react-router-dom';
 
 interface LayoutProps {
-  children?: ReactElement;
+  children?: ReactElement | ReactElement[];
 }
 
 export default function Layout({ children }: LayoutProps) {
