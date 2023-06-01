@@ -30,7 +30,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "DISABLE_ESLINT_PLUGIN=true storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "eslintConfig": {
     "extends": [
@@ -52,15 +54,29 @@
   },
   "packageManager": "yarn@3.5.0",
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.18",
+    "@storybook/addon-interactions": "^7.0.18",
+    "@storybook/addon-links": "^7.0.18",
+    "@storybook/blocks": "^7.0.18",
+    "@storybook/preset-create-react-app": "^7.0.18",
+    "@storybook/react": "^7.0.18",
+    "@storybook/react-webpack5": "^7.0.18",
+    "@storybook/testing-library": "^0.0.14-next.2",
     "@types/eslint": "^8",
     "@types/prettier": "^2",
+    "@types/prop-types": "^15",
     "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^5.58.0",
     "@typescript-eslint/parser": "^5.58.0",
     "@yarnpkg/sdks": "^3.0.0-rc.42",
+    "babel-plugin-named-exports-order": "^0.0.2",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
-    "prettier": "^2.8.7"
+    "eslint-plugin-storybook": "^0.6.12",
+    "prettier": "^2.8.7",
+    "prop-types": "^15.8.1",
+    "storybook": "^7.0.18",
+    "webpack": "^5.84.1"
   }
 }
