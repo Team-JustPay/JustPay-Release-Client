@@ -6,7 +6,6 @@ const HomePage = lazy(() => import('pages/Home'));
 const PayPage = lazy(() => import('pages/Pay'));
 const PostPage = lazy(() => import('pages/Post'));
 
-
 export default function Routes() {
   return (
     <BrowserRouter>

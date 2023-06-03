@@ -1,3 +1,4 @@
+import FullWidthButton from 'components/common/FullWidthButton';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -13,6 +14,13 @@ export default function PayWarning() {
         저스트페이에서 책임지지 않아요. <br />
         ㆍ결제수단에서 토스페이를 선택하면 해외 결제가 가능해요.
       </p>
+      <FullWidthButton
+        text={'결제하기'}
+        onClick={() => {
+          alert('결제완료 창 이동');
+        }}
+        color={'black'}
+      />
     </PayWarningContainer>
   );
 }
@@ -33,5 +41,6 @@ const PayWarningContainer = styled.section`
     color: ${({ theme }) => theme.colors.light_green};
     font: ${({ theme }) => theme.fonts.R_14};
     line-height: 21px;
+    margin-bottom: 2.4rem;
   }
 `;
