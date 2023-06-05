@@ -4,6 +4,7 @@ import Layout from 'components/common/Layout';
 import PostInformation from 'components/PostInformation';
 import AddressInformation from 'components/common/AddressInformation';
 import PayWarning from 'components/pay/PayWarning';
+import FullWidthButton from 'components/common/FullWidthButton';
 
 export default function Pay() {
   const dummyPost = {
@@ -34,9 +35,12 @@ export default function Pay() {
         address={'16295, 경기도 수원시 장안구 경수대로 976번길 22(수원 한일타운)'}
       />
       <Title>환불 계좌</Title>
+      <FullWidthButton text={'송우영 | 우리은행 1002955768226'} color={'gray'} />
       <Title>배송 방법</Title>
+      <FullWidthButton text={'우체국 택배 2400원'} color={'gray'} />
       <Title>배송 메시지 (선택)</Title>
-      <Title>배송 수단</Title>
+      <Title>결제 수단</Title>
+      <FullWidthButton text={'무통장 입금'} color={'justGreen'} />
       <Title>결제 금액</Title>
       <PayWarning />
     </Layout>
@@ -46,7 +50,8 @@ export default function Pay() {
 const Title = styled.h1`
   color: ${({ theme }) => theme.colors.black_green};
   font: ${({ theme }) => theme.fonts.B_22};
-  margin-bottom: 3.2rem;
+  margin-bottom: 2.4rem;
+  margin-top: 4rem;
 `;
 
 const BorderLine = styled.div`
