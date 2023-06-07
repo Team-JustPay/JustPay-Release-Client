@@ -1,0 +1,40 @@
+{
+  "name": "@just-pay/design-system",
+  "packageManager": "yarn@3.5.0",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.0.0-rc.3",
+    "styled-reset": "^4.4.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/plugin-transform-runtime": "^7.22.4",
+    "@babel/preset-env": "^7.22.4",
+    "@babel/preset-react": "^7.22.3",
+    "@babel/preset-typescript": "^7.21.5",
+    "@babel/runtime": "^7.22.3",
+    "@storybook/addon-essentials": "^7.0.18",
+    "@storybook/addon-interactions": "^7.0.18",
+    "@storybook/addon-links": "^7.0.18",
+    "@storybook/addon-mdx-gfm": "^7.0.18",
+    "@storybook/blocks": "^7.0.18",
+    "@storybook/react": "^7.0.18",
+    "@storybook/react-webpack5": "^7.0.18",
+    "@storybook/testing-library": "^0.1.0",
+    "@types/babel__core": "^7",
+    "@types/babel__plugin-transform-runtime": "^7",
+    "@types/babel__preset-env": "^7",
+    "@types/prop-types": "^15",
+    "@types/react": "^18.0.35",
+    "@types/react-dom": "^18.0.11",
+    "babel-preset-typescript": "^7.0.0-alpha.19",
+    "prop-types": "^15.8.1",
+    "storybook": "^7.0.18",
+    "webpack": "^5.84.1"
+  },
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  }
+}
