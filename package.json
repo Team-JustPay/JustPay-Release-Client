@@ -12,7 +12,8 @@
     "start": "yarn workspace @just-pay/client start",
     "build": "yarn workspace @just-pay/client react-scripts build",
     "storybook": "yarn workspace @just-pay/design-system storybook dev -p 6006",
-    "build-storybook": "yarn workspace @just-pay/design-system storybook build"
+    "build-storybook": "yarn workspace @just-pay/design-system storybook build",
+    "chromatic": "yarn workspace @just-pay/design-system chromatic --project-token=$STORYBOOK_PROJECT_TOKEN"
   },
   "resolutions": {
     "@storybook/core-common/webpack": "^5",
