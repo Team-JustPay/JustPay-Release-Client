@@ -29,6 +29,7 @@
     "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
     "babel-preset-typescript": "^7.0.0-alpha.19",
+    "chromatic": "^6.19.8",
     "prop-types": "^15.8.1",
     "storybook": "^7.0.18",
     "webpack": "^5.84.1"
@@ -36,5 +37,8 @@
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
-  }
+  },
+  "version": "",
+  "readme": "ERROR: No README data found!",
+  "_id": "@just-pay/design-system@"
 }
