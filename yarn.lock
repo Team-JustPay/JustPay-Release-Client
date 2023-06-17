@@ -2944,6 +2944,7 @@ __metadata:
     "@types/react": ^18.0.35
     "@types/react-dom": ^18.0.11
     babel-preset-typescript: ^7.0.0-alpha.19
+    chromatic: ^6.19.8
     prop-types: ^15.8.1
     react: ^18.2.0
     react-dom: ^18.2.0
@@ -7027,6 +7028,17 @@ __metadata:
   version: 2.0.0
   resolution: "chownr@npm:2.0.0"
   checksum: c57cf9dd0791e2f18a5ee9c1a299ae6e801ff58fee96dc8bfd0dcb4738a6ce58dd252a3605b1c93c6418fe4f9d5093b28ffbf4d66648cb2a9c67eaef9679be2f
+  languageName: node
+  linkType: hard
+
+"chromatic@npm:^6.19.8":
+  version: 6.19.8
+  resolution: "chromatic@npm:6.19.8"
+  bin:
+    chroma: dist/bin.js
+    chromatic: dist/bin.js
+    chromatic-cli: dist/bin.js
+  checksum: 3f80373d9e77d3363924c274c8b9465b5f0ff835b7fb4a753848e37068a4564fa67ab205a4cf89820cf136fdefd637b54730819a5c376406a87bf8737ddf03ac
   languageName: node
   linkType: hard
 

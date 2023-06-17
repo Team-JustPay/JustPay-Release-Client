@@ -7294,6 +7294,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:18.2.8"],\
             ["@types/react-dom", "npm:18.2.4"],\
             ["babel-preset-typescript", "npm:7.0.0-beta.3"],\
+            ["chromatic", "npm:6.19.8"],\
             ["prop-types", "npm:15.8.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:c456e7583ac7f401be6f80a4dc5ea95275d22663151a4cfd57163c9400534fa55749807d05e8e718b75be85cceeda546666dba175dec8c11476d3a7488554c4c#npm:18.2.0"],\
@@ -13031,6 +13032,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/chownr-npm-2.0.0-638f1c9c61-c57cf9dd07.zip/node_modules/chownr/",\
           "packageDependencies": [\
             ["chownr", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["chromatic", [\
+        ["npm:6.19.8", {\
+          "packageLocation": "./.yarn/cache/chromatic-npm-6.19.8-944672efa8-3f80373d9e.zip/node_modules/chromatic/",\
+          "packageDependencies": [\
+            ["chromatic", "npm:6.19.8"]\
           ],\
           "linkType": "HARD"\
         }]\
