@@ -15,7 +15,7 @@
     "@types/react-router-dom": "^5.3.3",
     "axios": "^1.4.0",
     "eslint": "^8.38.0",
-    "eslint-plugin-react-app": "^6.2.2",
+    "eslint-config-react-app": "6",
     "react": "^18.2.0",
     "react-content-loader": "^6.2.1",
     "react-dom": "^18.2.0",
@@ -23,8 +23,7 @@
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.9",
     "styled-reset": "^4.4.6",
-    "web-vitals": "^2.1.4",
-    "yarn": "^1.22.19"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,8 +33,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {
@@ -60,8 +58,12 @@
     "@yarnpkg/sdks": "^3.0.0-rc.42",
     "babel-plugin-named-exports-order": "^0.0.2",
     "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^2.8.7",
     "prop-types": "^15.8.1",
     "typescript": "^5.1.3",

@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/static/js/main.90a2538a.js",
+    "static/media/justpay_logo.svg": "/static/media/justpay_logo.5505e2bf5d8551316b2083368ba71665.svg",
+    "static/media/justpay_text_logo.svg": "/static/media/justpay_text_logo.e16cfe3c67f85216956185f0c2466ead.svg",
+    "static/media/truck.svg": "/static/media/truck.3d81bad3ec059a712e6e7e42180f6ebb.svg",
+    "index.html": "/index.html",
+    "static/media/drawer_logo.svg": "/static/media/drawer_logo.cf9fcdf35ccd3b4a52bfe4638c23252f.svg",
+    "static/media/x_logo.svg": "/static/media/x_logo.cccfdd0332dee644717123bcfcddbff5.svg",
+    "static/media/more_logo.svg": "/static/media/more_logo.cf2904679ba9fd8897d04934747fa411.svg",
+    "static/media/left_arrow.svg": "/static/media/left_arrow.14c5879e5110122c73b3b3039b75de46.svg",
+    "main.90a2538a.js.map": "/static/js/main.90a2538a.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.90a2538a.js"
+  ]
+}

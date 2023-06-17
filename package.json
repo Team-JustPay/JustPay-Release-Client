@@ -10,7 +10,9 @@
   "packageManager": "yarn@3.5.0",
   "scripts": {
     "start": "yarn workspace @just-pay/client start",
-    "storybook": "yarn workspace @just-pay/design-system storybook dev -p 6006"
+    "build": "yarn workspace @just-pay/client react-scripts build",
+    "storybook": "yarn workspace @just-pay/design-system storybook dev -p 6006",
+    "build-storybook": "yarn workspace @just-pay/design-system storybook build"
   },
   "resolutions": {
     "@storybook/core-common/webpack": "^5",
