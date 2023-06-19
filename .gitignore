@@ -5,6 +5,12 @@
 /.pnp
 .pnp.js
 
+# client dependencies
+/apps/client/node_modules
+
+# design-system dependencies
+/apps/design-system/node_modules
+
 # testing
 /coverage
 
