@@ -5,6 +5,7 @@ import PostInformation from 'components/PostInformation';
 import AddressInformation from 'components/common/AddressInformation';
 import PayWarning from 'components/pay/PayWarning';
 import FullWidthButton from 'components/common/FullWidthButton';
+import Title from 'components/pay/Title';
 
 export default function Pay() {
   const dummyPost = {
@@ -26,32 +27,33 @@ export default function Pay() {
         postTitle={dummyPost.postTitle}
         postWriter={dummyPost.postWriter}
       />
-      <Title>결제 예정 금액</Title>
+      <TotalPay>
+        <Title color={'black'} content={'결제 예정 금액'} />
+        <Title color={'blue'} content={'48000원'} />
+      </TotalPay>
       <BorderLine />
-      <Title>받는 사람</Title>
+      <Title color={'black'} content={'받는 사람'} />
       <AddressInformation
         name={'송우영'}
         phone={'01050312685'}
         address={'16295, 경기도 수원시 장안구 경수대로 976번길 22(수원 한일타운)'}
       />
-      <Title>환불 계좌</Title>
+      <Title color={'black'} content={'환불 계좌'} />
       <FullWidthButton text={'송우영 | 우리은행 1002955768226'} color={'gray'} />
-      <Title>배송 방법</Title>
+      <Title color={'black'} content={'베송 방법'} />
       <FullWidthButton text={'우체국 택배 2400원'} color={'gray'} />
-      <Title>배송 메시지 (선택)</Title>
-      <Title>결제 수단</Title>
+      <Title color={'black'} content={'배송 메시지 (선택)'} />
+      <Title color={'black'} content={'결제 수단'} />
       <FullWidthButton text={'무통장 입금'} color={'justGreen'} />
-      <Title>결제 금액</Title>
+      <Title color={'black'} content={'결제 금액'} />
       <PayWarning />
     </Layout>
   );
 }
 
-const Title = styled.h1`
-  color: ${({ theme }) => theme.colors.black_green};
-  font: ${({ theme }) => theme.fonts.B_22};
-  margin-bottom: 2.4rem;
-  margin-top: 4rem;
+const TotalPay = styled.article`
+  display: flex;
+  justify-content: space-between;
 `;
 
 const BorderLine = styled.div`
