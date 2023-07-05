@@ -17,7 +17,6 @@ export const Header = styled.section`
 
 export const HeaderSection = styled.section`
   display: flex;
-  width: calc(100% / 3);
   svg {
     display: block;
     height: 50px;
