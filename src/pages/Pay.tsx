@@ -8,6 +8,7 @@ import FullWidthButton from 'components/common/FullWidthButton';
 import Title from 'components/pay/Title';
 import InputButton from 'components/common/InputButton';
 import Comment from 'components/common/Comment';
+import WarningMessage from 'components/pay/WarningMessage';
 
 export default function Pay() {
   const dummyPost = {
@@ -48,8 +49,10 @@ export default function Pay() {
         address={'16295, 경기도 수원시 장안구 경수대로 976번길 22(수원 한일타운)'}
       />
       <Title color={'black'} content={'환불 계좌'} />
+      <WarningMessage color={'gray'} text={'판매자가 운송장 입력을 10일간하지 않은 경우 환불됩니다'} />
       <FullWidthButton text={'송우영 | 우리은행 1002955768226'} color={'gray'} />
-      <Title color={'black'} content={'베송 방법'} />
+      <Title color={'black'} content={'배송 방법'} />
+      <WarningMessage color={'purple'} text={'직거래인 경우, 구매확정으로 정산이 되니 반드시 체크해주세요'} />
       <FullWidthButton text={'우체국 택배 2400원'} color={'gray'} />
       <Title color={'black'} content={'배송 메시지 (선택)'} />
       <InputButton text={'배송 메시지 내용을 적으세요'} />
