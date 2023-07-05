@@ -6,6 +6,7 @@ import AddressInformation from 'components/common/AddressInformation';
 import PayWarning from 'components/pay/PayWarning';
 import FullWidthButton from 'components/common/FullWidthButton';
 import Title from 'components/pay/Title';
+import InputButton from 'components/common/InputButton';
 
 export default function Pay() {
   const dummyPost = {
@@ -43,6 +44,7 @@ export default function Pay() {
       <Title color={'black'} content={'베송 방법'} />
       <FullWidthButton text={'우체국 택배 2400원'} color={'gray'} />
       <Title color={'black'} content={'배송 메시지 (선택)'} />
+      <InputButton text={'배송 메시지 내용을 적으세요'} />
       <Title color={'black'} content={'결제 수단'} />
       <FullWidthButton text={'무통장 입금'} color={'justGreen'} />
       <Title color={'black'} content={'결제 금액'} />
@@ -57,8 +59,7 @@ const TotalPay = styled.article`
 `;
 
 const BorderLine = styled.div`
-  width: 100%;
   height: 16px;
   background-color: ${({ theme }) => theme.colors.background};
-  margin-bottom: 3.2rem;
+  margin: 0px -16px 3.2rem -16px;
 `;
