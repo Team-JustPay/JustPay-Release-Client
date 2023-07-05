@@ -58,7 +58,10 @@ export default function Pay() {
       <InputButton text={'배송 메시지 내용을 적으세요'} />
       <Title color={'black'} content={'결제 수단'} />
       <FullWidthButton text={'무통장 입금'} color={'justGreen'} />
-      <Title color={'black'} content={'결제 금액'} />
+      <TotalPay>
+        <Title color={'black'} content={'결제 금액'} />
+        <Title color={'blue'} content={'50400원'} />
+      </TotalPay>
       <PayWarning />
     </Layout>
   );
