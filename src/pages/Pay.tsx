@@ -7,6 +7,7 @@ import PayWarning from 'components/pay/PayWarning';
 import FullWidthButton from 'components/common/FullWidthButton';
 import Title from 'components/pay/Title';
 import InputButton from 'components/common/InputButton';
+import Comment from 'components/common/Comment';
 
 export default function Pay() {
   const dummyPost = {
@@ -21,6 +22,12 @@ export default function Pay() {
     },
     // postDate: '23.08.03', // 4~ 뷰에서 사용
   };
+
+  const dummyComment = [
+    { userName: '일상다반사', content: '고글 제노 포카 구매가능한가요?', index: 0 },
+    { userName: '거래계', content: '아직 구매가능합니다!', index: 1 },
+  ];
+
   return (
     <Layout>
       <PostInformation
@@ -28,6 +35,7 @@ export default function Pay() {
         postTitle={dummyPost.postTitle}
         postWriter={dummyPost.postWriter}
       />
+      <Comment comment={dummyComment} />
       <TotalPay>
         <Title color={'black'} content={'결제 예정 금액'} />
         <Title color={'blue'} content={'48000원'} />
@@ -61,5 +69,5 @@ const TotalPay = styled.article`
 const BorderLine = styled.div`
   height: 16px;
   background-color: ${({ theme }) => theme.colors.background};
-  margin: 0px -16px 3.2rem -16px;
+  margin: 16px -16px 3.2rem -16px;
 `;
