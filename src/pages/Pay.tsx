@@ -5,6 +5,10 @@ import PostInformation from 'components/PostInformation';
 import AddressInformation from 'components/common/AddressInformation';
 import PayWarning from 'components/pay/PayWarning';
 import FullWidthButton from 'components/common/FullWidthButton';
+import Title from 'components/pay/Title';
+import InputButton from 'components/common/InputButton';
+import Comment from 'components/common/Comment';
+import WarningMessage from 'components/pay/WarningMessage';
 
 export default function Pay() {
   const dummyPost = {
@@ -19,6 +23,12 @@ export default function Pay() {
     },
     // postDate: '23.08.03', // 4~ 뷰에서 사용
   };
+
+  const dummyComment = [
+    { userName: '일상다반사', content: '고글 제노 포카 구매가능한가요?', index: 0 },
+    { userName: '거래계', content: '아직 구매가능합니다!', index: 1 },
+  ];
+
   return (
     <Layout>
       <PostInformation
@@ -26,37 +36,44 @@ export default function Pay() {
         postTitle={dummyPost.postTitle}
         postWriter={dummyPost.postWriter}
       />
-      <Title>결제 예정 금액</Title>
+      <Comment comment={dummyComment} />
+      <TotalPay>
+        <Title color={'black'} content={'결제 예정 금액'} />
+        <Title color={'blue'} content={'48000원'} />
+      </TotalPay>
       <BorderLine />
-      <Title>받는 사람</Title>
+      <Title color={'black'} content={'받는 사람'} />
       <AddressInformation
         name={'송우영'}
         phone={'01050312685'}
         address={'16295, 경기도 수원시 장안구 경수대로 976번길 22(수원 한일타운)'}
       />
-      <Title>환불 계좌</Title>
+      <Title color={'black'} content={'환불 계좌'} />
+      <WarningMessage color={'gray'} text={'판매자가 운송장 입력을 10일간하지 않은 경우 환불됩니다'} />
       <FullWidthButton text={'송우영 | 우리은행 1002955768226'} color={'gray'} />
-      <Title>배송 방법</Title>
+      <Title color={'black'} content={'배송 방법'} />
+      <WarningMessage color={'purple'} text={'직거래인 경우, 구매확정으로 정산이 되니 반드시 체크해주세요'} />
       <FullWidthButton text={'우체국 택배 2400원'} color={'gray'} />
-      <Title>배송 메시지 (선택)</Title>
-      <Title>결제 수단</Title>
+      <Title color={'black'} content={'배송 메시지 (선택)'} />
+      <InputButton text={'배송 메시지 내용을 적으세요'} />
+      <Title color={'black'} content={'결제 수단'} />
       <FullWidthButton text={'무통장 입금'} color={'justGreen'} />
-      <Title>결제 금액</Title>
+      <TotalPay>
+        <Title color={'black'} content={'결제 금액'} />
+        <Title color={'blue'} content={'50400원'} />
+      </TotalPay>
       <PayWarning />
     </Layout>
   );
 }
 
-const Title = styled.h1`
-  color: ${({ theme }) => theme.colors.black_green};
-  font: ${({ theme }) => theme.fonts.B_22};
-  margin-bottom: 2.4rem;
-  margin-top: 4rem;
+const TotalPay = styled.article`
+  display: flex;
+  justify-content: space-between;
 `;
 
 const BorderLine = styled.div`
-  width: 100%;
   height: 16px;
   background-color: ${({ theme }) => theme.colors.background};
-  margin-bottom: 3.2rem;
+  margin: 16px -16px 3.2rem -16px;
 `;
