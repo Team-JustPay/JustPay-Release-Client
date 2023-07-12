@@ -1,8 +1,10 @@
 import FullWidthButton from 'components/common/FullWidthButton';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 export default function PayWarning() {
+  const navigate = useNavigate();
   return (
     <PayWarningContainer>
       <h1>결제 전 반드시 읽어주세요!</h1>
@@ -17,7 +19,7 @@ export default function PayWarning() {
       <FullWidthButton
         text={'결제하기'}
         onClick={() => {
-          alert('결제완료 창 이동');
+          navigate('/pay/done');
         }}
         color={'black'}
       />

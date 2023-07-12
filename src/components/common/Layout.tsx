@@ -17,8 +17,10 @@ export default function Layout({ children }: LayoutProps) {
     <Container>
       {/* 헤더: 확인된 헤더 종류는 2가지, 라우터 체크해서 동적으로 넣어주기 */}
       {location.pathname === '/' && <MainHeader />}
-      {location.pathname.includes('/post') && <FuncHeader title="거래글" leftFunc rightFunc="more" />}
-      {location.pathname.includes('/pay') && <FuncHeader title="저스트페이 안전결제" leftFunc={true} />}
+      {location.pathname.includes('/done') && <FuncHeader rightFunc="close" />}
+      {location.pathname.match(/pay(?!.*done)/) && <FuncHeader title="저스트페이 안전결제" leftFunc={true} />}
+
+      <BottomLine />
       {/* 메인 컨텐츠 */}
       {children}
     </Container>
@@ -31,4 +33,10 @@ const Container = styled.section`
   height: 100vh;
   overflow: scroll;
   padding: 0 16px;
+`;
+
+const BottomLine = styled.div`
+  height: 0.5px;
+  background-color: ${({ theme }) => theme.colors.light_green};
+  margin: 0 -16px;
 `;
