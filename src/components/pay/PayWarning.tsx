@@ -32,7 +32,7 @@ const PayWarningContainer = styled.section`
   flex-direction: column;
   padding: 2.4rem;
   background-color: ${({ theme }) => theme.colors.background};
-  margin: 0px -16px 3.2rem -16px;
+  margin: 0px -16px 0 -16px;
 
   h1 {
     color: ${({ theme }) => theme.colors.middle_green};

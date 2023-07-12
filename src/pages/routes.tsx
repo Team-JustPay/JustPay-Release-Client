@@ -3,8 +3,8 @@ import { lazy, Suspense } from 'react';
 import { BrowserRouter, Routes as PageRoutes, Route as PageRoute } from 'react-router-dom';
 
 const HomePage = lazy(() => import('pages/Home'));
-const PayPage = lazy(() => import('pages/Pay'));
 const PostPage = lazy(() => import('pages/Post'));
+const PayPage = lazy(() => import('pages/pay/Pay'));
 const PayDonePage = lazy(() => import('pages/pay/PayDone'));
 
 export default function Routes() {

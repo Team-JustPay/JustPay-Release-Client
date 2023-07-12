@@ -9,6 +9,7 @@ import Title from 'components/pay/Title';
 import InputButton from 'components/common/InputButton';
 import Comment from 'components/common/Comment';
 import WarningMessage from 'components/pay/WarningMessage';
+import Margin from 'components/pay/Margin';
 
 export default function Pay() {
   const dummyPost = {
@@ -31,6 +32,7 @@ export default function Pay() {
 
   return (
     <Layout>
+      <Margin height={24} />
       <PostInformation
         postThumbnail={dummyPost.postThumbnail}
         postTitle={dummyPost.postTitle}
