@@ -37,7 +37,7 @@
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "yarn chromatic --project-token=$STORYBOOK_PROJECT_TOKEN"
+    "chromatic": "yarn chromatic --project-token=chpt_37dd7796be26248"
   },
   "version": "",
   "readme": "ERROR: No README data found!",
